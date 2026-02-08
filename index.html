@@ -3,103 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A One Clothing | Kingston's Premium Outdoorfitter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>A One Clothing | Kingston</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">A ONE CLOTHING</a>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about">Our Story</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="burger" id="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
+            <div class="logo">A ONE CLOTHING</div>
+            
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <section id="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>Est. 1938</h1>
-                <h2>Heritage. Quality. Kingston.</h2>
-                <p>Premium outdoor apparel from the world's best brands.</p>
-                <a href="#shop" class="btn">Shop Collection</a>
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=1920&q=80" alt="Outdoor Lifestyle" class="hero-bg">
+        
+        <div class="hero-content">
+            <span class="tagline">Est. 1938 — Kingston, Ontario</span>
+            <h1>Rugged Luxury for<br>The Great Outdoors.</h1>
+            <a href="#shop" class="btn">View Collection</a>
+        </div>
+    </section>
+
+    <section id="shop" class="section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Brands</h2>
+                <p>Quality gear that stands the test of time.</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/barbour.jpg" alt="Barbour Jacket">
+                    </div>
+                    <div class="card-text">
+                        <h3>Barbour</h3>
+                        <p>Heritage Waxed Jackets</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/goose.jpg" alt="Canada Goose Parka">
+                    </div>
+                    <div class="card-text">
+                        <h3>Canada Goose</h3>
+                        <p>Arctic Program Parkas</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-wrapper">
+                        <<img src="assets/blundstone.jpg" alt="Blundstone Boots">
+                    </div>
+                    <div class="card-text">
+                        <h3>Blundstone</h3>
+                        <p>Tasmanian Leather Boots</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="shop" class="container">
-        <div class="section-title">
-            <h3>Featured Collections</h3>
-            <p>Rugged elegance for the Canadian outdoors.</p>
-        </div>
-        <div class="product-grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1548863227-3af567e9589d?auto=format&fit=crop&w=800&q=80" alt="Barbour Jacket">
-                <div class="card-info">
-                    <h4>Barbour</h4>
-                    <p>Classic Waxed Jackets</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1517940310602-26535839fe84?auto=format&fit=crop&w=800&q=80" alt="Canada Goose">
-                <div class="card-info">
-                    <h4>Canada Goose</h4>
-                    <p>Extreme Weather Gear</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=800&q=80" alt="Blundstone Boots">
-                <div class="card-info">
-                    <h4>Blundstone</h4>
-                    <p>Legendary Comfort</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container about-content">
+    <section id="about" class="bg-light section-pad">
+        <div class="container split-layout">
             <div class="about-text">
-                <h3>Serving Kingston Since 1938</h3>
-                <p>Located in the heart of historic downtown Kingston, A One Clothing has been a landmark for over 80 years. We specialize in high-quality, durable goods that stand the test of time. From the streets of YGK to the trails of Frontenac Park, we have you covered.</p>
+                <h2>A Kingston Landmark</h2>
+                <p class="lead">Serving the limestone city for over 85 years.</p>
+                <p>Located in the heart of downtown Kingston, A One Clothing is a family-owned staple. We don't just sell clothes; we equip you for life in Canada. From the trails of Frontenac Park to the windy streets of Queen's campus, we have you covered.</p>
             </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Store Interior">
+            
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80" alt="Store Interior">
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <footer id="contact">
         <div class="container footer-grid">
-            <div class="footer-col">
-                <h5>Visit Us</h5>
+            <div class="footer-item">
+                <h4>Visit Us</h4>
                 <p>338 Princess Street<br>Kingston, ON K7L 1B6</p>
             </div>
-            <div class="footer-col">
-                <h5>Hours</h5>
+            <div class="footer-item">
+                <h4>Hours</h4>
                 <p>Mon-Sat: 10am - 6pm<br>Sun: 11am - 4pm</p>
             </div>
-            <div class="footer-col">
-                <h5>Contact</h5>
+            <div class="footer-item">
+                <h4>Contact</h4>
                 <p>(613) 548-8732<br>info@aoneclothing.com</p>
             </div>
         </div>
         <div class="copyright">
             <p>&copy; 2025 A One Clothing. Student Project.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
